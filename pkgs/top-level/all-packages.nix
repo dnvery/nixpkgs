@@ -37447,6 +37447,12 @@ with pkgs;
 
   prismlauncher = qt6Packages.callPackage ../games/prismlauncher/wrapper.nix { };
 
+  prismlauncherftb-unwrapped = qt6Packages.callPackage ../games/prismlauncher {
+    inherit (darwin.apple_sdk.frameworks) Cocoa;
+  };
+
+  prismlauncherftb = qt6Packages.callPackage ../games/prismlauncherftb/wrapper.nix { };
+
   pong3d = callPackage ../games/pong3d { };
 
   pokerth = libsForQt5.callPackage ../games/pokerth {

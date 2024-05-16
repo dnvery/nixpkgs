@@ -31,7 +31,7 @@ assert lib.assertMsg (stdenv.isLinux || !gamemodeSupport) "gamemodeSupport is on
 
 stdenv.mkDerivation (finalAttrs: {
   pname = "prismlauncherftb-unwrapped";
-  version = "8.2";
+  version = "release-8.x";
 
   src = fetchFromGitHub {
     owner = "dnvery";

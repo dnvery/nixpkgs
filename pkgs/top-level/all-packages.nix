@@ -37447,7 +37447,7 @@ with pkgs;
 
   prismlauncher = qt6Packages.callPackage ../games/prismlauncher/wrapper.nix { };
 
-  prismlauncherftb-unwrapped = qt6Packages.callPackage ../games/prismlauncher {
+  prismlauncherftb-unwrapped = qt6Packages.callPackage ../games/prismlauncherftb {
     inherit (darwin.apple_sdk.frameworks) Cocoa;
   };
 

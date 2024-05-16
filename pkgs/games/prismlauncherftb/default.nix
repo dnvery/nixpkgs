@@ -37,7 +37,7 @@ stdenv.mkDerivation (finalAttrs: {
     owner = "dnvery";
     repo = "PrismLauncherFTB";
     rev = finalAttrs.version + "-ftb";
-    hash = "";
+    hash = "sha256-Bf7GZtZ4+Ou3fV6629T7UzPL0tgYXINJ4OmG5q8QR+0=";
   };
 
   nativeBuildInputs = [ extra-cmake-modules cmake jdk17 ninja stripJavaArchivesHook ];
